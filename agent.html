@@ -1,0 +1,253 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>VALORIND</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    p {
+      color: grey;
+    }
+
+    #Hard {
+      color: rgb(255, 64, 64)
+    }
+
+    #Medium {
+      color: rgb(255, 217, 0)
+    }
+
+    #Easy {
+      color: rgb(0, 255, 195)
+    }
+  </style>
+</head>
+
+<body class="banner">
+  <div class="navbar">
+    <img src="logo.png" class="logo" width="110px">
+    <ul>
+      <li><a href="index.html">Home </a></li>
+      <li><a href="Agent.html">Agent </a></li>
+      <li><a href="weapon.html">Weapon </a></li>
+      <li><a href="maps.html">Maps </a></li>
+      <li><a href="addon.html">Add-on </a></li>
+      <li><a href="javascript.html">javascript</a></li>
+      <li><a href="aboutme.html">About me</a></li>
+    </ul>
+  </div>
+
+  <h1 align="center">Valorant Agent </h1>
+  <div class="agent-container">
+
+    <div class="agent-box"
+      onclick="showPopup('Breach', 'Initiator | Hard', ' Aftershock: Meledakkan target dengan gempa bumi.\n Flashpoint: Melemparkan kilat yang menyilaukan.\n Fault Line: Menciptakan gelombang kejut untuk mengejutkan musuh.\n Rolling Thunder: Melepaskan gelombang kejut besar yang mengenai semua orang yang didekatnya.')">
+      <img src="agent/breach_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Breach</h3>
+      <p id="Hard">Initiator | Hard</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Brimstone', 'Controller | Easy', ' Stim Beacon: Menempatkan beacon yang memberikan bonus kecepatan dan kecepatan tembak.\n Incendiary: Melemparkan granat yang membuat area terbakar.\n Sky Smoke: menurunkan asap dari langit untuk menyembunyikan area.\n Orbital Strike: Menjalankan serangan orbital yang menghancurkan area terkena.')">
+      <img src="agent/brimstone_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Brimstone</h3>
+      <p id="Easy">Controller | Easy</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Cypher', 'Initiator | Medium', ' Trapwire: Menempatkan kawat berjebakan yang mengungkapkan musuh yang melewati.\n Cyber Cage: Melemparkan kandang yang memutar musuh menjadi proyektil.\n Spycam: Menempatkan kamera yang dapat ditembak dan merekam area.\n Neural Theft: melemparkan topi kepada musuh dan mendeteksi musuh lain yang masih hidup.')">
+      <img src="agent/cypher_m.png" alt="Gambar Karakter" width="100%">
+      <h3>cypher</h3>
+      <p id="Medium">Inititator | Medium</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Jett', 'Duelist | Hard', ' Cloudburst: Melemparkan granat yang melepaskan awan yang menutupi pandangan.\n Updraft: Mengepakkan sayap untuk melompat tinggi.\n Tailwind: Bergerak cepat ke arah yang dipandang.\n Blade Storm: Mengeluarkan pisau angin yang dapat melempar dan membunuh musuh dengan satu pukulan.')">
+      <img src="agent/jett_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Jett</h3>
+      <p id="Hard">Duelist | Hard</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Killjoy', 'Sentinel | Medium', ' Nanoswarm: Melemparkan granat yang melepaskan nanobots yang menyebabkan kerusakan area.\n Alarmbot: Menempatkan robot yang meledak ketika mendeteksi musuh.\n Turret: Menempatkan menara meriam otomatis yang menembak musuh yang terdeteksi.\n Lockdown: Melepas generator untuk musuh dalam radius besar dan memberi efek stun kepada musuh.')">
+      <img src="agent/killjoy_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Killjoy</h3>
+      <p id="Medium">Sentinel | Medium</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Omen', 'Controller | Easy', ' Shrouded Step: Teleportasi ke posisi yang ditentukan.\n Paranoia: Melemparkan gelap yang mengganggu visi musuh yang terkena.\n Dark Cover: Melemparkan bola bayangan yang dapat diatur ke dalam area asap.\n From the Shadows: Teleportasi jarak jauh ke posisi yang dipilih setelah jeda singkat.')">
+      <img src="agent/omen_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Omen</h3>
+      <p id="Easy">Controller | Easy</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Phoenix', 'Duelist | Easy', ' Blaze: Menyulut api untuk menyembuhkan diri atau menutup area.\n Curveball: Melemparkan kilatan yang melecut pandangan musuh.\n Flashpoint: Melemparkan bola api yang melepaskan kilatan saat memantul.\n Run It Back: Bangkit kembali ke posisi awal jika mati.')">
+      <img src="agent/phoenix_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Phoenix</h3>
+      <p id="Easy">Duelist | Easy</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Raze', 'Duelist | Hard', ' Boom Bot: Melemparkan robot yang berjalan cepat dan meledak ketika mendeteksi musuh.\n Blast Pack: Melemparkan bahan peledak yang bisa digunakan untuk melompat tinggi.\n Paint Shells: Melemparkan granat yang meledak beberapa kali.\n Showstopper: Melempar roket yang meledak besar.')">
+      <img src="agent/raze_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Raze</h3>
+      <p id="Hard">Duelist | Hard</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Reyna', 'Duelist | Medium', ' Leer: Melemparkan proyektil energi yang melewati dinding dan menghalangi visi musuh.\n Devour: Menyerap energi dari musuh yang mati untuk menyembuhkan diri.\n Dismiss: Teleportasi ke lokasi yang ditentukan.\n Empress: Meningkatkan kecepatan, memberikan invulnerability, dan peningkatan kekuatan senjata.')">
+      <img src="agent/reyna_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Reyna</h3>
+      <p id="Medium">Duelist | Medium</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Sage', 'Sentinel | Easy', ' Healing Orb: Menyembuhkan diri sendiri atau rekan tim di sekitarnya.\n Barrier Orb: Menempatkan dinding yang bisa diatur untuk melindungi area tertentu.\n Slow Orb: Melemparkan bola yang memperlambat semua yang terkena.\n Resurrection: Menghidupkan kembali rekan tim yang mati.')">
+      <img src="agent/sage_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Sage</h3>
+      <p id="Easy">Sentinel | Easy</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Skye', 'Initiator | Hard', ' Regrowth: Melemparkan proyektil yang menyembuhkan rekan tim di sekitarnya.\n Trailblazer: Mengontrol bola api yang bisa digunakan untuk mengeksplorasi dan meledakkan.\n Guiding Light: Mengontrol bola cahaya yang membutakan musuh.\n Seekers: Melemparkan tiga makhluk yang mencari musuh terdekat dan membutakan mereka.')">
+      <img src="agent/skye_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Skye</h3>
+      <p id="Hard">Initiator | Hard</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Sova', 'Initiator | Medium', ' Owl Drone: Mengontrol drone yang dapat terbang dan mengintai musuh.\n Shock Bolt: Melemparkan anak panah listrik yang dapat melepaskan ledakan listrik.\n Recon Bolt: Melemparkan bola mata yang memungkinkan pemain melihat musuh yang terkena.\n Hunters Fury: Mengeluarkan serangan kilat listrik yang dapat melewati dinding dan memberi damage ke musuh.')">
+      <img src="agent/sova_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Sova</h3>
+      <p id="Medium">Inititator | Medium</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Deadlock', 'Duelist | Medium', 'Flashbang: Melemparkan granat kilat yang membutakan musuh.\n Bullet Swarm: Melepaskan hujan peluru yang merusak area.\n Teleport: Melakukan teleportasi ke lokasi yang ditentukan.\n Deadshot: Meningkatkan akurasi tembakan untuk durasi tertentu.')">
+      <img src="agent/deadlock_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Deadlock</h3>
+      <p id="Medium">Duelist | Medium</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Harbor', 'Initiator | Easy', 'Waveform: Melemparkan bola energi yang melambatkan dan merusak musuh.\n Seismic Slam: Membuat gelombang kejut yang menghentikan pergerakan musuh.\n Tide Wall: Membangun dinding air yang menyerap proyektil.\n Tsunami: Melepaskan gelombang air besar yang membanjiri area.')">
+      <img src="agent/harbor_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Harbor</h3>
+      <p id="Easy">Initiator | Easy</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Astra', 'Controller | Hard', 'Gravity Well: Menarik musuh ke dalam area yang menimbulkan kerusakan.\n Nova Pulse: Melepaskan gelombang energi yang membutakan dan melambatkan musuh.\n Nebula: Membentuk barrier tembus pandang atau menutupi area.\n Astral Form: Menjelajah ke lokasi jauh untuk memasang Stars dan memanipulasi keadaan.')">
+      <img src="agent/astra_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Astra</h3>
+      <p id="Hard">Controller | Hard</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Yoru', 'Duelist | Medium', 'Blindside: Melemparkan granat kilat yang melepaskan sinar menyilaukan.\n Gatecrash: Memasuki dimensi lain untuk menggank atau melarikan diri.\n Fakeout: Melemparkan bayangan palsu yang bergerak dan menarik perhatian musuh.\n Dimensional Drift: Menyelinap ke dimensi lain untuk menjadi tidak terlihat.')">
+      <img src="agent/yoru_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Yoru</h3>
+      <p id="Medium">Duelist | Medium</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Chamber', 'Duelist | Hard', ' Hollow Point: Melemparkan proyektil energi yang melukai musuh.\n Weaponize: Meningkatkan senjata untuk durasi tertentu.\n Echo: Melemparkan perangkat yang menciptakan paduan suara mengganggu.\n Rewind: Kembali ke lokasi beberapa detik yang lalu.')">
+      <img src="agent/chamber_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Chamber</h3>
+      <p id="Hard">Duelist | Hard</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Gekko', 'Sentinel | Easy', ' Recon Dart: Melemparkan panah pengintai yang mengungkapkan musuh.\n Sticky Sensor: Melemparkan sensor lengket yang mematikan musuh di sekitarnya.\n Surveillance: Menempatkan kamera pengintai yang dapat ditembak.\n Camouflage: Menjadi tidak terlihat untuk durasi tertentu.')">
+      <img src="agent/gekko_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Gekko</h3>
+      <p id="Easy">Sentinel | Easy</p>
+    </div>
+    <br>
+    <div class="agent-box"
+      onclick="showPopup('Viper', 'Controller | Medium', ' Snake Bite: Melemparkan bola yang melepaskan asap beracun.\n Poison Cloud: Menempatkan awan asap yang menyebabkan kerusakan.\n Toxic Screen: Menempatkan dinding asap yang dapat diatur tinggi dan panjangnya.\n Vipers Pit: Menciptakan zona beracun yang menyebabkan kerusakan pada musuh di dalamnya.')">
+      <img src="agent/viper_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Viper</h3>
+      <p id="Medium">Controller | Medium</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Neon', 'Duelist | Easy', ' Strobe: Melempar granat kilat yang membutakan musuh.\n Hologram: Membuat hologram palsu untuk membingungkan musuh.\n Overdrive: Meningkatkan kecepatan dan kecepatan tembak untuk durasi tertentu.\n Shatter: Melepaskan ledakan energi di sekitar dirinya.')">
+      <img src="agent/neon_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Neon</h3>
+      <p id="Easy">Duelist | Easy</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Fade', 'Controller | Medium', ' Infiltrate: Menyelinap ke area musuh tanpa terdeteksi.\n Distort: Memanipulasi realitas untuk membingungkan musuh.\n Vanish: Menjadi tidak terlihat untuk durasi tertentu.\n Shadowmeld: Bergabung dengan bayangan untuk menghilangkan diri dari pandangan musuh.')">
+      <img src="agent/fade_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Fade</h3>
+      <p id="Medium">Controller | Medium</p>
+    </div>
+
+    <div class="agent-box"
+      onclick="showPopup('Iso', 'Initiator | Hard', ' Sonic Wave: Melemparkan gelombang suara yang membutakan musuh.\n Phase Walk: Melakukan perjalanan cepat ke lokasi yang dipilih.\n Resonance: Menciptakan medan energi yang menghalangi tembakan musuh.\n Resonate: Memperkuat serangan senjata untuk durasi tertentu.')">
+      <img src="agent/iso_m.png" alt="Gambar Karakter" width="100%">
+      <h3>Iso</h3>
+      <p id="Hard">Initiator | Hard</p>
+    </div>
+
+
+    <div class="popup" id="popup">
+      <div class="popup-content" id="popupContent">
+        <span class="close-button" onclick="closePopup()"><img src="X.png" width="25px" align="right" /></span>
+
+        <h2 id="popupTitle"></h2>
+        <img id="popupImage" alt="Gambar Karakter" width="40%">
+        <div class="skill-section">
+          <h3>Skills:</h3>
+          <ul id="popupSkills"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showPopup(title, description, skills) {
+        document.getElementById("popupTitle").innerHTML = title;
+        document.getElementById("popupImage").src = "agent/" + title.toLowerCase() + "_m.png";
+
+        var skillsList = document.getElementById("popupSkills");
+        skillsList.innerHTML = "";
+
+        skills.split('\n').forEach(function (skill) {
+          var listItem = document.createElement("ul");
+          listItem.innerHTML = skill;
+          skillsList.appendChild(listItem);
+        });
+
+        document.getElementById("popup").style.display = "flex";
+      }
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        animateBoxes();
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        animateWeaponBoxes();
+      });
+
+      function animateWeaponBoxes() {
+        const weaponBoxes = document.querySelectorAll('.agent-box');
+
+        weaponBoxes.forEach((box, index) => {
+          box.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        weaponBoxes.forEach(box => box.classList.add('visible'));
+      }
+    </script>
+
+  </div>
+</body>
+
+</html>

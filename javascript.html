@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>VALORIND</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+</style>
+
+<body class="banner">
+    <div class="navbar">
+        <img src="logo.png" class="logo" width="110px">
+        <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="Agent.html">Agent </a></li>
+            <li><a href="weapon.html">Weapon </a></li>
+            <li><a href="maps.html">Maps </a></li>
+            <li><a href="addon.html">Add-on </a></li>
+            <li><a href="javascript.html">javascript</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+        </ul>
+    </div>
+
+    <h1 align="center"> Aim Training </h1> <br>
+    <p>Seperti yang kita ketahui, pada game valorant kita mengandalkan Aim kita agar bisa menempatkan kursor kita pada
+        musuh</p>
+    <p>maka dari itu kita menyediakan mini game untuk kalian melatih menempatkan cursor/Aim kalian disini</p>
+    <br>
+
+    <div id="mini-game"> </div> <br>
+    <p>Score: <span id="score">0</span></p>
+    <p>Refresh page untuk mereset score</p> <br>
+
+    <script>
+        var score = 0;
+
+        function createCircle() {
+            var circle = document.createElement("div");
+            circle.className = "circle";
+
+            var x = Math.random() * (500 - 100);
+            var y = Math.random() * (500 - 100);
+
+            circle.style.left = x;
+            circle.style.top = y;
+
+            circle.addEventListener("click", function () {
+                score++;
+                document.getElementById("score").innerText = score;
+                circle.remove();
+                createCircle();
+            });
+
+            document.getElementById("mini-game").appendChild(circle);
+        }
+
+        createCircle();
+    </script>
+
+
+    </div>
+</body>
+
+</html>
